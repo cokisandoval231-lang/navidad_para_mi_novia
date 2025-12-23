@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Feliz Navidad Mi Amor - Aunque estemos lejos</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Mountains+of+Christmas:wght@700&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/x-icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🎄</text></svg>">
+</head>
+<body>
+    <!-- Elementos decorativos navideños -->
+    <div id="snowflakes-container"></div>
+    <div id="christmas-balls-container"></div>
+    <div id="hearts-container"></div>
+    
+    <div class="container">
+        <header>
+            <h1>¡Feliz Navidad, Mi Amor!</h1>
+            <div class="subtitle">Aunque la distancia nos separe, mi corazón está siempre contigo</div>
+            
+            <div class="distance-message">
+                <i class="fas fa-heart"></i> Esta Navidad, más que nunca, sé que el amor no conoce de kilómetros ni fronteras. Cada estrella en el cielo me recuerda a ti.
+            </div>
+            
+            <div class="heart-container">
+                <i class="fas fa-heart heart"></i>
+                <i class="fas fa-heart heart" style="animation-delay: 0.2s"></i>
+                <i class="fas fa-heart heart" style="animation-delay: 0.4s"></i>
+                <i class="fas fa-heart heart" style="animation-delay: 0.6s"></i>
+                <i class="fas fa-heart heart" style="animation-delay: 0.8s"></i>
+            </div>
+            
+            <div class="connection-line"></div>
+        </header>
+        
+        <main class="main-content">
+            <div class="message-box">
+                <h2>Mi Mensaje Para Ti Desde la Distancia</h2>
+                
+                <div class="distance-icon">
+                    <i class="fas fa-globe-americas"></i> <i class="fas fa-long-arrow-alt-right"></i> <i class="fas fa-heart"></i>
+                </div>
+                
+                <div class="message-text">
+                    Mi amor, en esta Navidad quiero que sepas que, aunque kilómetros nos separen, ningún kilómetro puede separar lo que siento por ti. Eres la estrella que ilumina mis noches y el sol que calienta mis días, sin importar cuán lejos estés.
+                    Recuerdo cada conversación, cada mensaje que me ha hecho sonreír en la distancia. Cada palabra tuya llega a mi corazón y lo llena de alegría. Eres mi hogar, sin importar dónde estemos físicamente.
+                    Esta Navidad es diferente porque no puedo abrazarte, pero quiero que sepas que te llevo en mi corazón cada segundo. Que la magia de esta época nos acerque aunque sea en espíritu, y que el próximo año nos traiga el regalo más grande: poder estar juntos.
+                    Miro al cielo en estas noches navideñas y sé que estás viendo las mismas estrellas. Eso nos conecta, eso me hace sentir cerca de ti. Te amo más allá de la distancia, más allá del tiempo, más allá de cualquier obstáculo.
+                    Que esta Navidad nos una aún más, que cada deseo que pidas bajo el árbol se cumpla, y que el amor que sentimos siga creciendo, demostrándonos que el verdadero amor no tiene límites.
+                </div>
+                <div class="signature">Con todo mi amor, desde donde esté.</div>
+            </div>
+            
+            <div class="game-frame">
+                <h2 class="frame-title">Juego Navideño para Ti</h2>
+                <p class="game-description">Encuentra todas las parejas navideñas. ¡Te amo!</p>
+                
+                <div class="game-container">
+                    <div class="game-stats">
+                        <div class="stat">
+                            <span class="stat-label">Movimientos:</span>
+                            <span id="moves-count">0</span>
+                        </div>
+                        <div class="stat">
+                            <span class="stat-label">Tiempo:</span>
+                            <span id="timer">00:00</span>
+                        </div>
+                        <div class="stat">
+                            <span class="stat-label">Parejas:</span>
+                            <span id="pairs-count">0/6</span>
+                        </div>
+                    </div>
+                    
+                    <div class="memory-game" id="memory-game">
+                        <!-- Las cartas se generarán con JavaScript -->
+                    </div>
+                    
+                    <div class="game-controls">
+                        <button id="restart-game" class="game-btn">
+                            <i class="fas fa-redo"></i> Reiniciar Juego
+                        </button>
+                        <button id="hint-game" class="game-btn">
+                            <i class="fas fa-lightbulb"></i> Pista
+                        </button>
+                    </div>
+                    
+                    <div class="game-message" id="game-message">
+                        ¡Encuentra todas las parejas navideñas! Te amo ❤️
+                    </div>
+                </div>
+            </div>
+        </main>
+        
+        <div class="time-together">
+            <h3>Nuestro Tiempo Juntos</h3>
+            <p>Cada segundo a tu lado (aunque sea a distancia) es un regalo</p>
+            <div class="together-container">
+                <div class="together-item">
+                    <div class="together-value" id="days-together">0</div>
+                    <div class="together-label">Días</div>
+                </div>
+                <div class="together-item">
+                    <div class="together-value" id="hours-together">0</div>
+                    <div class="together-label">Horas</div>
+                </div>
+                <div class="together-item">
+                    <div class="together-value" id="minutes-together">0</div>
+                    <div class="together-label">Minutos</div>
+                </div>
+                <div class="together-item">
+                    <div class="together-value" id="seconds-together">0</div>
+                    <div class="together-label">Segundos</div>
+                </div>
+            </div>
+            <p class="together-note">Desde que comenzamos esta hermosa historia juntos</p>
+        </div>
+        
+        <div class="interactive-section">
+            <button class="christmas-btn" id="surprise-btn">
+                <i class="fas fa-gift"></i> Abre mi regalo de Navidad para ti
+            </button>
+            
+            <button class="christmas-btn" id="music-btn">
+                <i class="fas fa-music"></i> Nuestra canción especial
+            </button>
+            
+            <div class="surprise-container" id="surprise-container">
+                <div class="surprise-content">
+                    <h3>Mis Promesas Para Ti</h3>
+                    <ul class="memory-list">
+                        <li>Te prometo ser leal y honesto contigo siempre</li>
+                        <li>Te prometo demostrarte cada día cuánto te amo</li>
+                        <li>Te prometo escucharte y apoyarte en todo momento</li>
+                        <li>Te prometo respetarte y valorarte como te mereces</li>
+                        <li>Te prometo hacer todo lo posible para hacerte feliz</li>
+                        <li>Te prometo que nuestro amor crecerá más fuerte cada día</li>
+                    </ul>
+                    <p style="text-align: center; margin-top: 20px; font-size: 1.2rem;">
+                        <i class="fas fa-heart" style="color: #ff4d6d;"></i> Eres lo más importante en mi vida y siempre lo serás. <i class="fas fa-heart" style="color: #ff4d6d;"></i>
+                    </p>
+                </div>
+            </div>
+        </div>
+        
+        <footer>
+            <p>Hecho con <i class="fas fa-heart" style="color: #ff4d6d;"></i> especialmente para ti, desde la distancia</p>
+            <p>Que la magia de la Navidad acorte los kilómetros que nos separan</p>
+            <p style="margin-top: 20px; font-size: 0.9rem;">
+                <i class="fas fa-star"></i> Dondequiera que estés, allí está mi corazón contigo <i class="fas fa-star"></i>
+            </p>
+        </footer>
+    </div>
+
+    <!-- Audio para la canción navideña -->
+    <!-- IMPORTANTE: Reemplaza "cancion_navidad.mp3" con el nombre de tu archivo -->
+    <audio id="christmas-music" loop>
+        <source src="cancion_navidad.mp3" type="audio/mpeg">
+        Tu navegador no soporta el elemento de audio.
+    </audio>
+    
+    <!-- Mensaje si no se encuentra el audio -->
+    <div id="audio-message" style="display: none; text-align: center; padding: 10px; background: rgba(255, 77, 109, 0.2); border-radius: 10px; margin: 10px auto; max-width: 500px;">
+        <p><i class="fas fa-info-circle"></i> Para agregar una canción, coloca un archivo MP3 en la carpeta "audio" y nómbralo "cancion_navidad.mp3"</p>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
